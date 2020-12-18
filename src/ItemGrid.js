@@ -10,12 +10,12 @@ export default class ItemGrid extends Component {
     }
     render() {
         return (
-            <div>
-                <Item ItemName={this.state.name1}></Item><br/>
-                <Item ItemName={this.state.name2}></Item><br/>
-                <Item ItemName={this.state.name3}></Item><br/>
-                <Item ItemName={this.state.name4}></Item><br/>
-            </div>
+            <span>
+                <Item ItemName={this.state.name1}></Item>
+                <Item ItemName={this.state.name2}></Item><br></br>
+                <Item ItemName={this.state.name3}></Item>
+                <Item ItemName={this.state.name4}></Item>
+            </span>
         )
     }
 }
