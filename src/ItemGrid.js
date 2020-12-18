@@ -3,19 +3,24 @@ import Item from './Item'
 
 export default class ItemGrid extends Component {
     state={
-        name1:'A',
-        name2:'B',
-        name3:'C',
-        name4:'D',
+        name:[
+            'A',
+            'B',
+            'C',
+            'D',
+            'E',
+            'F',
+            'G',
+            'H',
+        ]
     }
     render() {
         return (
             <span>
-                <Item ItemName={this.state.name1}></Item>
-                <Item ItemName={this.state.name2}></Item><br></br>
-                <Item ItemName={this.state.name3}></Item>
-                <Item ItemName={this.state.name4}></Item>
-            </span>
+                {[...this.state.name].map((str) =>{
+                    <Item ItemName={this.state.name[str]}></Item>
+                })}
+            </span> 
         )
     }
 }
