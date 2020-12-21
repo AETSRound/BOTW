@@ -21,5 +21,4 @@ const InnerItem = styled.div`
     display:inline-block;
     border-radius:10%;
     font-size:2rem;
-
 `;

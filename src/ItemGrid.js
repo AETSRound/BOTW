@@ -1,25 +1,32 @@
 import React, { Component } from 'react'
-import Item from './Item'
+import ItemRow from './ItemRow'
 
 export default class ItemGrid extends Component {
+    // state={
+    //     name:{
+    //         first:[1, 2, 3, 4, 5,],
+    //         second:[6, 7, 8, 9, 10,],
+    //         third:[11, 12, 13, 14, 15,],
+    //         fourth:[16, 17, 18, 19, 20,],
+    //     }    
+    // }
+
     state={
-        name:[
-            'A',
-            'B',
-            'C',
-            'D',
-            'E',
-            'F',
-            'G',
-            'H',
-        ]
+        items:[
+            [1, 2, 3, 4, 5,],
+            [6, 7, 8, 9, 10,],
+            [11, 12, 13, 14, 15,],
+            [16, 17, 18, 19, 20,],
+        ]   
     }
     render() {
+        const list = this.state.items.map(
+            items => (<ItemRow ItemsName={items}></ItemRow>)
+        )
+
         return (
             <span>
-                {[...this.state.name].map((str) =>{
-                    <Item ItemName={this.state.name[str]}></Item>
-                })}
+               {list}
             </span> 
         )
     }
