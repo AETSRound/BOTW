@@ -1,50 +1,57 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import weapon1 from './items/weapons/BotW_Ancient_Short_Sword_Icon.png';
+import "./Button.css"
+
 
 export default class Item extends Component {
-   
     render() {
-        const itemQty =  this.props.ItemName
-        return (
-            <span>
+        return (<span>
+            <InnerBtn className="btn">
                 <InnerItem>
-                    <ImgHolder><img src={weapon1}></img></ImgHolder>
                     <TxtHolder>{this.props.ItemName}</TxtHolder>
-                    {/* {this.props.ItemName} */}
+                    <ImgHolder src={this.props.ImgName} className="imgC"></ImgHolder>
                 </InnerItem>
-            </span>
-        )
+                
+            </InnerBtn>
+        </span>)
     }
 }
 
+const InnerBtn = styled.button`
+    width:7rem;
+    height:7rem;
+    margin:1rem;
+    align-items:center;
+    background-color:black;
+    border:1px solid white;
+    
+`;
+const ImgHolder=styled.img`
+    width:5.8rem;
+    object-fit: cover;
+`;
+
 const InnerItem = styled.div`
-    width: 6 rem;
+    width: 6rem;
     height: 6rem;
     background: white;
     border:1px solid;
-    padding: 5px;
-    display:inline-block;
-    border-radius:0%;
     font-size:2rem;
-    margin-top: -0.5rem;
-    margin-left: 1rem;
-`;
-
-const ImgHolder = styled.div`
-
+    background-color:black;
 `;
 
 const TxtHolder = styled.div`
     position: relative;
-    left:4.4rem;
-    top:-1.4rem;
+    left:4.3rem;
+    top:5.2rem;
     width:2rem;
+    margin-bottom:-1rem;
     text-align:center;
     font-size: 1rem;
-    border:1px solid;
+    border:1px solid white;
     word-wrap:normal;
-    background-color:brown;
+    background-color:black;
     color:white;
+    
 `;
 

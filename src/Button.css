@@ -1,0 +1,23 @@
+.btn:focus{
+    visibility: hidden;
+}
+.btn:hover{
+    background-color: white;
+}
+
+.mainBtn{
+    width: 10rem;
+    height: 4rem;
+    font-size: 2rem;
+    border: 2px solid black;
+    margin: -1px;
+    background-color: burlywood;
+}
+
+.mainBtn:hover{
+    background-color: coral;
+}
+
+.mainBtn:focus{
+    visibility: collapse;
+}
