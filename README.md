@@ -1,6 +1,6 @@
 ![StartingImg](https://user-images.githubusercontent.com/28921656/103332836-f92a5c80-4aae-11eb-99ca-a7bcb3d96cef.PNG)
 
-원본 글  https://dev.to/flagrede/how-to-replicate-the-zelda-botw-interface-with-react-tailwind-and-framer-motion-part-1-298g
+<h3>원본 글  https://dev.to/flagrede/how-to-replicate-the-zelda-botw-interface-with-react-tailwind-and-framer-motion-part-1-298g <h3>
 
 을 참고한 젤다 : 야숨 UI 를 React로 만들어 보기.
 
