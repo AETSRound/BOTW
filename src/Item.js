@@ -27,7 +27,7 @@ const InnerItem = styled.div`
     display:inline-block;
     border-radius:0%;
     font-size:2rem;
-    margin-top: 1rem;
+    margin-top: -0.5rem;
     margin-left: 1rem;
 `;
 
